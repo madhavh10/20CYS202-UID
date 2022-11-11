@@ -1,9 +1,9 @@
 <html>
-    <head><title> UID </title><link rel="icon" href="C:\Users\Hari\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\UI Project\Personal_website\favicon.ico"></head>
+    <head><title> Profile_MH </title><link rel="icon" href="./favicon.ico"></head>
     <!--Home Page-->
     <style>
         body{
-            background-image: url(https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2019/01/white-mounains-sm.jpg);
+            background-image:url("./home.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -13,21 +13,49 @@
             padding: 1px;
             background-color: DarkSalmon;
             color: white;
+            margin-top: 18%;
+            /* position:sticky;top: 200%;transform: translate(-50%, -50%);margin-right: -50%;margin-left: 50%;font-size: 18px;*/ 
         }
+        .font-face {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style:normal;
+            font-weight:800;
+            font-size:25px;
+            color:yellow;
+        }
+
+        .blink {
+            animation: blinker 1.5s linear infinite;
+            color:darkred;
+            font-family: sans-serif;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        .home{
+            font-size: 18px;
+        }
+        .home1
+        {
+            font-size: 31px;
+        }
+
     </style>
     <body>
-        <h1 style="text-align:center"><b>Hello World!! Welcome to my Webpage</b></h1>
-        <p>
+        <h1 style="text-align:center" class="home1"><marquee class="blink" width="60%" direction="left" height="100px" scrollamount="12"><b>WELCOME TO MY PROFILE</b></marquee></h1>
+        <br><br>
+        <p class="font-face">
             My name is <b>Madhav Harikumar</b>.<br>
-            I am a very enthusiastic person.<br>
+            I love Cyber Security.<br>
             If you are very curious to know WHO I AM, click the link below<br>
         </p>
-        <a href="C:\Users\Hari\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\UI Project\Personal_website\About_me.html"><b>ABOUT ME</b></a>
+        <a style="color: darkred;" class="home" href=.\About_me.html"><b>ABOUT ME</b></a>
         <br>
-        <a href="C:\Users\Hari\OneDrive - Amrita Vishwa Vidyapeetham\Desktop\UI Project\Personal_website\cv.html"><b>CV</b></a>
+        <a style="color: darkred;" class="home" href=".\cv.html"><b>CV</b></a>
         <br>
-        <a href="https://www.instagram.com"><b>Instagram<b></a><br>
-        
+        <a style="color: darkred;" class="home" href="https://www.instagram.com"><b>INSTAGRAM<b></a><br>
         <footer>
             <p>Author: Madhav<br>
             <b>@Copyright</b></p>
