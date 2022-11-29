@@ -99,7 +99,7 @@ a {
     <hr>
 
     <label for="tname"><b>Team Name</b></label>
-    <input type="text" placeholder="Enter Team Name" name="tname" id="tname" required>
+    <input type="text" placeholder="Enter Team Name"  name="tname" id="tname" required>
 
     <label for="tname1"><b>Team Captain</b></label>
     <input type="text" placeholder="Enter Name of Team Captain" onchange="NameCheck()" name="tname1" id="tname1" required>
@@ -121,10 +121,10 @@ a {
     <br><br>
 
     <label for="place"><b>Place</b></label><br>
-    <input type="text" placeholder="Place" name="place" id="place" required>
+    <input type="text" placeholder="Place" name="place" id="place" onchange="placeCheck()" required>
 
     <label for="state"><b>State</b></label>
-    <input type="text" placeholder="State" name="state" id="state" required>
+    <input type="text" placeholder="State" name="state" id="state" onchange="stateCheck()" required>
 
     <div>
         <label for="b1"><b>Date of Arrival</b></label>
@@ -149,7 +149,7 @@ a {
 
 
     <label for="contact"><b>Contact</b></label>
-    <input type="text" placeholder="Contact of Faculty-Incharge" name="contact" id="contact" required>
+    <input type="text" placeholder="Contact of Faculty-Incharge" onchange="phoneCheck()" name="contact" id="contact" required>
 
 
     <p><b>Click the button to know your teamid</b></p>
@@ -157,36 +157,6 @@ a {
     <p><button onclick="myFunction()">Click Me</button></p>
 
     <div id="myDIV">Id</div>
-
-    <script>
-    function myFunction() {
-        var x = document.getElementById("myDIV");
-        if (x.innerHTML === "Id") {
-            x.innerHTML = "Your Team Id is 101";
-        } 
-        else 
-        {
-            x.innerHTML = "Id";
-        }
-    }
-    </script>
-    <br>
-    <script>
-    function NameCheck() {
-    var x = document.getElementById("tname1").value;
-    var y = x.split("")
-    let sp = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '!', '"', '#', '$', '%', '&', "'", '(', ')', '*', '+', ',', '-', '.', '/', ':', ';', '<', '=', '>', '?', '@', '[', '\\', ']', '^', '_', '`', '{', '|', '}', '~'];
-    var arrLen = sp.length;
-    for (var i = 0; i < arrLen; i++) {
-        if (y.includes(sp[i])) {
-            alert("Speacial charater presant in Name please remove it")
-        }
-    }
-
-    }
-    </script>
-
-    <br>
     <br>
 
 
@@ -200,6 +170,7 @@ a {
     <button type="submit" class="button1"><a href="../index.html">Back</a></button>
   </div>
 </form>
+<script src="../js/register.js"></script>
 
 </body>
 </html>
