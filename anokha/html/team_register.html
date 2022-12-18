@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Team Registration</title>
+<head><title>Team Registration</title><link rel="icon" href="../images/favicon_io/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -104,7 +103,12 @@ a {
     <label for="tname1"><b>Team Captain</b></label>
     <input type="text" placeholder="Enter Name of Team Captain" onchange="NameCheck()" name="tname1" id="tname1" required>
     
-    <label for="teamszie"><b>Team sizes</b></label><br />
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email-id of Faculty-incharge" onchange="chkEmail()" name="email" id="email" required>
+
+    <br>
+    <br>
+    <label for="teamsize"><b>Team sizes</b></label><br />
         <select name="teamsize" id="size">
           <option value="default">Select the option</option>
           <option value="1">1</option>
@@ -166,7 +170,7 @@ a {
     </div>
     
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" class="registerbtn" onclick="regISTER()">Register</button>
     <button type="submit" class="button1"><a href="../index.html">Back</a></button>
   </div>
 </form>

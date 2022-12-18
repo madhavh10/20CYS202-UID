@@ -64,4 +64,25 @@ function stateCheck()
     }
 }
 
+function regISTER()
+{
+    alert("Your team has been Registered!!");
+}
+
+function chkEmail()
+{
+    var u = document.getElementById("email").value;
+    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(u.match(validRegex))
+    {
+        alert("Valid email address!");
+        return true;
+    }
+    else
+    {
+        alert("Invalid email address!");
+        return false;
+    }
+}
+
 
