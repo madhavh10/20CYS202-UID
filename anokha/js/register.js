@@ -1,15 +1,3 @@
-function myFunction() 
-{
-    var x = document.getElementById("myDIV");
-    if (x.innerHTML === "Id") {
-        x.innerHTML = "Your Team Id is 101";
-    } 
-    else 
-    {
-        x.innerHTML = "Id";
-    }
-}
-
 function NameCheck() 
 {
     var x = document.getElementById("tname1").value;
