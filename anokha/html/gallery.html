@@ -1,66 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head><title>Gallery</title><link rel="icon" href="../images/favicon_io/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    .back{
-        background-color: lightblue;
-    }
-    .header {
-        padding: 80px;
-        text-align: center;
-        background-image: url(../images/anokha_back.png);
-        background-repeat: no-repeat;
-        color: white;
-    }
+  .button1 {
+    background-color: blue;
+    padding: 10px;
+    border: 2px solid black;
+    position: absolute;
+    top: 225%;
+    left: 47%;
+  }
 </style>
-<body class="back">
-<section id="photos" class="section photos">
-    <div class="container">
-        <div class="row">
-            <div class="header">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="grid">
-                    
-                    <li class="grid-item grid-item-sm-6">
-                        <img alt="" class="img-responsive center-block" src="../images/photos-1.png">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/anokha 2.png">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/photos-3.png">
-                    </li>
-                
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/photos-5.png">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/photos-6.png">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/anokha 3.png">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/anokha 4.png">
-                    </li>
-
-                    <li class="grid-item grid-item-sm-3">
-                        <img alt="" class="img-responsive center-block" src="../images/anokha 5.png">
-                    </li>
-                </ul>
-            </div>
-        </div>            
+<body style="background-color:lightblue">
+  <div class="lightbox" style="margin: 5rem;">
+    <div class="row">
+      <div class="col-lg-6">
+        <img
+          src="../images/anokha_event.png"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+          alt="Table Full of Spices"
+          class="w-100 mb-2 mb-md-4 shadow-1-strong rounded"
+        />
+        <img
+          src="../images/anokha 4.png"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+          alt="Coconut with Strawberries"
+          class="w-100 shadow-1-strong rounded"
+        />
+        <img
+          src="../images/anokha 5.png"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+          alt="Coconut with Strawberries"
+          class="w-100 shadow-1-strong rounded"
+        />
+      </div>
+      <div class="col-lg-6">
+        <img
+          src="../images/anokha 2.png"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+          alt="Dark Roast Iced Coffee"
+          class="w-100 shadow-1-strong rounded"
+        />
+        <img
+          src="../images/bgamrita2.jpg"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+          alt="Coconut with Strawberries"
+          class="w-100 shadow-1-strong rounded"
+        />
+        <img
+          src="../images/anokha 6.png"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+          alt="Coconut with Strawberries"
+          class="w-100 shadow-1-strong rounded"
+        />
+      </div>
     </div>
-</section>
+  </div>
+<a href="/">
+    <button type="button" class="button1">Go home</button>
+</a>  
 </body>
 </html>
